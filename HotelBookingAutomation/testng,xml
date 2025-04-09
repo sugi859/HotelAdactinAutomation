@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Adactin Hotel Booking Automation Suite" verbose="1" parallel="false">
+
+    <!-- TestNG Listener for ExtentReports and Screenshot Capture -->
+    <listeners>
+        <listener class-name="com.adactin.listeners.TestListener" />
+    </listeners>
+
+    <test name="Adactin Automation Tests">
+        <classes>
+            <!-- Include all relevant test classes here -->
+            <class name="com.adactin.testcases.LoginTest"/>
+            <class name="com.adactin.testcases.BookingTest"/>
+            <class name="com.adactin.testcases.LogoutTest"/>
+        </classes>
+    </test>
+
+</suite>
